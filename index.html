@@ -779,7 +779,7 @@
                 
               
 
-              <time title="创建时间：2018-08-07 11:24:36 / 修改时间：11:53:33" itemprop="dateCreated datePublished" datetime="2018-08-07T11:24:36+08:00">2018-08-07</time>
+              <time title="创建时间：2018-08-07 11:24:36 / 修改时间：14:12:47" itemprop="dateCreated datePublished" datetime="2018-08-07T11:24:36+08:00">2018-08-07</time>
             
 
             
@@ -861,7 +861,7 @@
           如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。
 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西
 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现
-您的star就是对我最大的感谢
+您的star就是对我最大的帮助
 
 前言在我最新开源的识兔项目中，最重要的功能就是识别图片
           ...
@@ -1795,25 +1795,9 @@
             });
           } else {
             
-              var newcounter = new Counter();
-              /* Set ACL */
-              var acl = new AV.ACL();
-              acl.setPublicReadAccess(true);
-              acl.setPublicWriteAccess(true);
-              newcounter.setACL(acl);
-              /* End Set ACL */
-              newcounter.set("title", title);
-              newcounter.set("url", url);
-              newcounter.set("time", 1);
-              newcounter.save(null, {
-                success: function(newcounter) {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-                },
-                error: function(newcounter, error) {
-                  console.log('Failed to create');
-                }
-              });
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
             
           }
         },
