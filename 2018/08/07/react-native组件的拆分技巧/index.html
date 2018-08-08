@@ -91,7 +91,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -108,19 +108,17 @@
 
 
 
-  <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  前言React组件具有很强的灵活性和功能性。 在JS.">
+  <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言React组件具有很强的灵活性和功能性。 在JS.COACH上有很多组件库可供使用，但随着时间的增长组件会变得非常臃肿。 与任何其他类型的编程一样，遵守单一原则不仅使您的组件更易于维护，而且还可以实现更多的复用。 但是，确定如何分离大型React组件的职责并不是很容易的。 这里有三种技">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-native组件的拆分技巧">
 <meta property="og:url" content="http://yoursite.com/2018/08/07/react-native组件的拆分技巧/index.html">
 <meta property="og:site_name" content="于广吉的博客">
-<meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  前言React组件具有很强的灵活性和功能性。 在JS.">
+<meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言React组件具有很强的灵活性和功能性。 在JS.COACH上有很多组件库可供使用，但随着时间的增长组件会变得非常臃肿。 与任何其他类型的编程一样，遵守单一原则不仅使您的组件更易于维护，而且还可以实现更多的复用。 但是，确定如何分离大型React组件的职责并不是很容易的。 这里有三种技">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
-<meta property="og:updated_time" content="2018-08-07T06:12:33.871Z">
+<meta property="og:updated_time" content="2018-08-08T02:43:10.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-native组件的拆分技巧">
-<meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  前言React组件具有很强的灵活性和功能性。 在JS.">
-<meta name="twitter:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
+<meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言React组件具有很强的灵活性和功能性。 在JS.COACH上有很多组件库可供使用，但随着时间的增长组件会变得非常臃肿。 与任何其他类型的编程一样，遵守单一原则不仅使您的组件更易于维护，而且还可以实现更多的复用。 但是，确定如何分离大型React组件的职责并不是很容易的。 这里有三种技">
 
 
 
@@ -372,12 +370,24 @@
                 
               
 
-              <time title="创建时间：2018-08-07 09:24:37 / 修改时间：14:12:33" itemprop="dateCreated datePublished" datetime="2018-08-07T09:24:37+08:00">2018-08-07</time>
+              <time title="创建时间：2018-08-07 09:24:37" itemprop="dateCreated datePublished" datetime="2018-08-07T09:24:37+08:00">2018-08-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-08 10:43:10" itemprop="dateModified" datetime="2018-08-08T10:43:10+08:00">2018-08-08</time>
               
             
           </span>
@@ -415,7 +425,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.9k</span>
+                <span title="本文字数">3.8k</span>
               
 
               
@@ -450,12 +460,9 @@
 
       
         <p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
-<p><strong><a href="https://github.com/RabbitDream/ShiTu" target="_blank" rel="noopener">识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西</a></strong></p>
-<p><strong>识兔现已重构，完全按照上线项目作为开发标准，使用Mobx<br>管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现</strong></p>
-<p><strong>您的star就是对我最大的帮助</strong></p>
-<p><img src="/images/%E8%AF%86%E5%85%94.gif" alt="识兔"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>React组件具有很强的灵活性和功能性。 在<a href="https://js.coach/react-native" target="_blank" rel="noopener">JS.COACH</a>上有很多组件库可供使用，但随着时间的增长组件会变得非常臃肿。</p>
 <p>与任何其他类型的编程一样，遵守单一原则不仅使您的组件更易于维护，而且还可以实现更多的复用。 但是，确定如何分离大型React组件的职责并不是很容易的。 这里有三种技巧让你从简单到复杂的方式学会拆分组件。</p>
+<a id="more"></a>
 <h2 id="拆分render"><a href="#拆分render" class="headerlink" title="拆分render()"></a>拆分render()</h2><p>这是使用最多的，也是最简单的方式：当组件呈现太多元素时，将这些元素拆分为逻辑子组件。</p>
 <p>拆分render() 是一个常见且快速的方式，是在同一个class中创建其他“子组件”方式：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Test extends React.Component &#123;</span><br><span class="line">  renderItem() &#123;</span><br><span class="line">    // ...</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  renderHeader() &#123;</span><br><span class="line">    // ...</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;View&gt;</span><br><span class="line">        &#123;this.renderItem()&#125;</span><br><span class="line">        &#123;this.renderHeader()&#125;</span><br><span class="line">      &lt;/View&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -725,7 +732,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">36k</span>
   
 
   
@@ -736,7 +743,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:07</span>
+    <span title="站点阅读时长">1:06</span>
   
 </div>
 
@@ -804,8 +811,6 @@
 
 
 
-  
-
 
 
 
@@ -837,12 +842,7 @@
 
   
   
-    <script type="text/javascript" src="true"></script>
-  
-
-  
-  
-    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="https://cdn.jsdelivr.net/gh/cdn-hub/canvas-ribbon@1.0/js/canvas-ribbon.min.js"></script>
   
 
 

@@ -91,7 +91,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -108,21 +108,21 @@
 
 
 
-  <meta name="description" content="本文是基于最新的react-navigation^2.5.3来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
+  <meta name="description" content="本文是基于最新的react-navigation^2.9.1来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-navigation 2.x使用技巧">
 <meta property="og:url" content="http://yoursite.com/2018/08/05/react-navigation使用技巧/index.html">
 <meta property="og:site_name" content="于广吉的博客">
-<meta property="og:description" content="本文是基于最新的react-navigation^2.5.3来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
+<meta property="og:description" content="本文是基于最新的react-navigation^2.9.1来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1338142-d159d429fe9f22dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1338142-b3e1c8cd294f4548.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1338142-081fdcbbc9cfc0da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-08-08T01:36:38.816Z">
+<meta property="og:updated_time" content="2018-08-08T02:43:10.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-navigation 2.x使用技巧">
-<meta name="twitter:description" content="本文是基于最新的react-navigation^2.5.3来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
+<meta name="twitter:description" content="本文是基于最新的react-navigation^2.9.1来书写的。  如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star">
 <meta name="twitter:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
 
 
@@ -396,7 +396,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-08 09:36:38" itemprop="dateModified" datetime="2018-08-08T09:36:38+08:00">2018-08-08</time>
+                <time title="修改时间：2018-08-08 10:43:10" itemprop="dateModified" datetime="2018-08-08T10:43:10+08:00">2018-08-08</time>
               
             
           </span>
@@ -469,7 +469,7 @@
 
       
         <blockquote>
-<p>本文是基于最新的react-navigation<code>^2.5.3</code>来书写的。</p>
+<p>本文是基于最新的react-navigation<code>^2.9.1</code>来书写的。</p>
 </blockquote>
 <p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
 <p><strong><a href="https://github.com/RabbitDream/ShiTu" target="_blank" rel="noopener">识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西</a></strong></p>
@@ -478,6 +478,7 @@
 <p><img src="/images/%E8%AF%86%E5%85%94.gif" alt="识兔"></p>
 <p><strong><a href="http://www.jianshu.com/p/b877115fff1b" target="_blank" rel="noopener">react-navigation使用技巧(进阶篇)</a></strong></p>
 <h2 id="什么是react-navigation"><a href="#什么是react-navigation" class="headerlink" title="什么是react-navigation?"></a>什么是react-navigation?</h2><p><code>react-native</code>从开源至今，一直存在几个无法解决的毛病，偶尔就会复发让人隐隐作痛，提醒你用的不是原生，其中包括列表的复用问题，导航跳转不流畅的问题等等。<br>终于facebook坐不住了，在前一段时间开始推荐使用<code>react-navigation</code>，并且在0.44发布的时将之前一直存在的<code>Navigator</code>废弃了。<br><code>react-navigation</code>是致力于解决导航卡顿，数据传递，Tabbar和navigator布局，支持<code>redux</code>。虽然现在功能还不完善，但基本是可以在项目中推荐使用的。</p>
+<a id="more"></a>
 <h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p><code>react-navigation</code>分为三个部分。</p>
 <p><code>StackNavigator</code>类似顶部导航条，用来跳转页面和传递参数。</p>
 <p><code>TabNavigator</code>类似底部标签栏，用来区分模块。</p>
@@ -1085,7 +1086,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">36k</span>
   
 
   
@@ -1096,7 +1097,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:07</span>
+    <span title="站点阅读时长">1:06</span>
   
 </div>
 
@@ -1164,8 +1165,6 @@
 
 
 
-  
-
 
 
 
@@ -1197,12 +1196,7 @@
 
   
   
-    <script type="text/javascript" src="true"></script>
-  
-
-  
-  
-    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="https://cdn.jsdelivr.net/gh/cdn-hub/canvas-ribbon@1.0/js/canvas-ribbon.min.js"></script>
   
 
 

@@ -91,7 +91,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -108,23 +108,21 @@
 
 
 
-  <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  本文的Demo最终的运行效果 前言本文仅写给在项目中没">
+  <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 本文的Demo前言本文仅写给在项目中没用使用过redux，又急于利用redux开发的同学们。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="redux&quot;使用&quot;教程">
 <meta property="og:url" content="http://yoursite.com/2018/08/07/redux”使用“教程/index.html">
 <meta property="og:site_name" content="于广吉的博客">
-<meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  本文的Demo最终的运行效果 前言本文仅写给在项目中没">
+<meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 本文的Demo前言本文仅写给在项目中没用使用过redux，又急于利用redux开发的同学们。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1338142-1d969162f9013072.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1338142-ba6d69149277009c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1338142-256c8aa8fd3431fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1338142-ba145278fb4f863c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-08-07T06:12:32.245Z">
+<meta property="og:updated_time" content="2018-08-08T02:43:01.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="redux&quot;使用&quot;教程">
-<meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西 识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现 您的star就是对我最大的帮助  本文的Demo最终的运行效果 前言本文仅写给在项目中没">
-<meta name="twitter:image" content="http://yoursite.com/images/%E8%AF%86%E5%85%94.gif">
+<meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 本文的Demo前言本文仅写给在项目中没用使用过redux，又急于利用redux开发的同学们。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1338142-ba6d69149277009c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -376,12 +374,24 @@
                 
               
 
-              <time title="创建时间：2018-08-07 11:40:03 / 修改时间：14:12:32" itemprop="dateCreated datePublished" datetime="2018-08-07T11:40:03+08:00">2018-08-07</time>
+              <time title="创建时间：2018-08-07 11:40:03" itemprop="dateCreated datePublished" datetime="2018-08-07T11:40:03+08:00">2018-08-07</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-08 10:43:01" itemprop="dateModified" datetime="2018-08-08T10:43:01+08:00">2018-08-08</time>
               
             
           </span>
@@ -454,12 +464,8 @@
 
       
         <p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
-<p><strong><a href="https://github.com/RabbitDream/ShiTu" target="_blank" rel="noopener">识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西</a></strong></p>
-<p><strong>识兔现已重构，完全按照上线项目作为开发标准，使用Mobx管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现</strong></p>
-<p><strong>您的star就是对我最大的帮助</strong></p>
-<p><img src="/images/%E8%AF%86%E5%85%94.gif" alt="识兔"></p>
-<h3 id="本文的Demo"><a href="#本文的Demo" class="headerlink" title="本文的Demo"></a><a href="https://github.com/RabbitDream/react-native-redux" target="_blank" rel="noopener">本文的Demo</a></h3><h3 id="最终的运行效果"><a href="#最终的运行效果" class="headerlink" title="最终的运行效果"></a>最终的运行效果</h3><p><img src="http://upload-images.jianshu.io/upload_images/1338142-1d969162f9013072.gif?imageMogr2/auto-orient/strip" alt="运行效果.gif"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文仅写给在项目中没用使用过<code>redux</code>，又急于利用<code>redux</code>开发的同学们。</p>
+<h3 id="本文的Demo"><a href="#本文的Demo" class="headerlink" title="本文的Demo"></a><a href="https://github.com/RabbitDream/react-native-redux" target="_blank" rel="noopener">本文的Demo</a></h3><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文仅写给在项目中没用使用过<code>redux</code>，又急于利用<code>redux</code>开发的同学们。</p>
+<a id="more"></a>
 <p>之前开源<a href="https://github.com/RabbitDream/react-native-BaiSi" target="_blank" rel="noopener">rn版百思不得姐</a>的时候，写过几篇<a href="http://www.jianshu.com/u/9895046b765d" target="_blank" rel="noopener">文章</a>，有人问什么时候会出<code>rn+redux</code>的文章，我也犹豫了很久，因为在开源<a href="https://github.com/RabbitDream/react-native-BaiSi" target="_blank" rel="noopener">百思</a>的时候，没有用到跨页面传递状态。</p>
 <p>上个月我开源了<a href="https://github.com/RabbitDream/ShiTu" target="_blank" rel="noopener">识兔</a>(可以识别手机中或者拍摄的图片)，本来打算使用<code>mobx</code>来做状态管理的，但在真正使用过程中，可能是我的方法不对，我总感觉<code>mobx</code>总有那么一点欠缺，深思熟虑之后，还是决定使用<code>redux</code>来管理项目中的状态。</p>
 <p>在之前学习<code>redux</code>的过程中发现，网上和<code>Github</code>上确实有很多开源<code>redux</code>的例子，和介绍<code>redux</code>的文章，但很少有从新手角度考虑的文章，绝大部分新手不一定需要知道<code>redux</code>是干什么的，他们只是想尽快的在项目中使用它，而我也认为不用你咋知道原理是啥，所以我写了这篇文章，用<a href="https://github.com/RabbitDream/ShiTu" target="_blank" rel="noopener">识兔</a>项目中的几个小案例来让新同学入了<code>redux</code>的门。</p>
@@ -698,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文的Demo"><span class="nav-number">1.</span> <span class="nav-text">本文的Demo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最终的运行效果"><span class="nav-number">2.</span> <span class="nav-text">最终的运行效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number"></span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number"></span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现"><span class="nav-number"></span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逆向工程"><span class="nav-number">1.</span> <span class="nav-text">逆向工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用到的redux库"><span class="nav-number">2.</span> <span class="nav-text">用到的redux库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-包装入口文件"><span class="nav-number">3.</span> <span class="nav-text">1. 包装入口文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-创建ConfigureStore文件"><span class="nav-number">4.</span> <span class="nav-text">2. 创建ConfigureStore文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#store：在上一步的时候，会发现有一个ConfigureStore-这个就是我们俗称的store。"><span class="nav-number">4.0.1.</span> <span class="nav-text">store：在上一步的时候，会发现有一个ConfigureStore,这个就是我们俗称的store。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-创建RootReducer文件"><span class="nav-number">5.</span> <span class="nav-text">3. 创建RootReducer文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#reducer：RootReducer中放的是各个页面的Reducer，推荐的做法是一个页面公用一个Reducer，便于之后管理。"><span class="nav-number">5.0.1.</span> <span class="nav-text">reducer：RootReducer中放的是各个页面的Reducer，推荐的做法是一个页面公用一个Reducer，便于之后管理。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-创建ActionTypes文件"><span class="nav-number">6.</span> <span class="nav-text">4. 创建ActionTypes文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#actionTypes：在使用redux过程中，需要给每个动作添加一个actionTypes类型，比如说在上面，我要获取userToken，就需要再actionTypes中加上USER-TOKEN，而有些时候，调用网络会有成功-失败两种状态，所以可以将这个状态更加细分USER-TOKEN-SUCCESS-USER-TOKEN-ERRO。"><span class="nav-number">6.0.1.</span> <span class="nav-text">actionTypes：在使用redux过程中，需要给每个动作添加一个actionTypes类型，比如说在上面，我要获取userToken，就需要再actionTypes中加上USER_TOKEN，而有些时候，调用网络会有成功/失败两种状态，所以可以将这个状态更加细分USER_TOKEN_SUCCESS/USER_TOKEN_ERRO。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-创建xxxAction文件"><span class="nav-number">7.</span> <span class="nav-text">5. 创建xxxAction文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#xxxAction：可能在一个页面需要用到多个action，比如说我识兔页面中，进入app的时候需要调用获取userToken的action，点击查找按钮的时候需要调用获取图片信息的action。每个页面是可以有多个action的，只需要在页面中引入就好"><span class="nav-number">7.0.1.</span> <span class="nav-text">xxxAction：可能在一个页面需要用到多个action，比如说我识兔页面中，进入app的时候需要调用获取userToken的action，点击查找按钮的时候需要调用获取图片信息的action。每个页面是可以有多个action的，只需要在页面中引入就好</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-connect连接页面和Reducer，完成需求1"><span class="nav-number">8.</span> <span class="nav-text">6. connect连接页面和Reducer，完成需求1</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#connect：如果完成了上面的步骤，恭喜你，还差最后一步就可以看到运行的效果了，那就是在需要的页面connect。因为ShiTu-js中代码过多，所以只在文章中放重要的部分，如果想要查看全部，可以运行项目或者直接查看ShiTu-js"><span class="nav-number">8.0.1.</span> <span class="nav-text">connect：如果完成了上面的步骤，恭喜你，还差最后一步就可以看到运行的效果了，那就是在需要的页面connect。因为ShiTu.js中代码过多，所以只在文章中放重要的部分，如果想要查看全部，可以运行项目或者直接查看ShiTu.js</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完成上面的6步，就可以在现有的项目中使用redux开发了。在第6步中我们只是完成了需求1，接下来就要利用redux实现跨页面更改状态了。"><span class="nav-number">8.1.</span> <span class="nav-text">完成上面的6步，就可以在现有的项目中使用redux开发了。在第6步中我们只是完成了需求1，接下来就要利用redux实现跨页面更改状态了。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-寻找需求"><span class="nav-number">9.</span> <span class="nav-text">1. 寻找需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-实现"><span class="nav-number">10.</span> <span class="nav-text">2. 实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本文只是我对于实现redux的一点看法，可能并不适用于你的项目，如果在使用过程中遇到什么问题，欢迎加QQ群397885169讨论。"><span class="nav-number">0.1.</span> <span class="nav-text">本文只是我对于实现redux的一点看法，可能并不适用于你的项目，如果在使用过程中遇到什么问题，欢迎加QQ群397885169讨论。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果认为我的文章不错，欢迎打赏，关注，喜欢。"><span class="nav-number">0.2.</span> <span class="nav-text">如果认为我的文章不错，欢迎打赏，关注，喜欢。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果感觉我的文章有问题，欢迎在评论区提出，我会修改。"><span class="nav-number">0.3.</span> <span class="nav-text">如果感觉我的文章有问题，欢迎在评论区提出，我会修改。</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文的Demo"><span class="nav-number">1.</span> <span class="nav-text">本文的Demo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number"></span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number"></span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现"><span class="nav-number"></span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逆向工程"><span class="nav-number">1.</span> <span class="nav-text">逆向工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用到的redux库"><span class="nav-number">2.</span> <span class="nav-text">用到的redux库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-包装入口文件"><span class="nav-number">3.</span> <span class="nav-text">1. 包装入口文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-创建ConfigureStore文件"><span class="nav-number">4.</span> <span class="nav-text">2. 创建ConfigureStore文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#store：在上一步的时候，会发现有一个ConfigureStore-这个就是我们俗称的store。"><span class="nav-number">4.0.1.</span> <span class="nav-text">store：在上一步的时候，会发现有一个ConfigureStore,这个就是我们俗称的store。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-创建RootReducer文件"><span class="nav-number">5.</span> <span class="nav-text">3. 创建RootReducer文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#reducer：RootReducer中放的是各个页面的Reducer，推荐的做法是一个页面公用一个Reducer，便于之后管理。"><span class="nav-number">5.0.1.</span> <span class="nav-text">reducer：RootReducer中放的是各个页面的Reducer，推荐的做法是一个页面公用一个Reducer，便于之后管理。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-创建ActionTypes文件"><span class="nav-number">6.</span> <span class="nav-text">4. 创建ActionTypes文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#actionTypes：在使用redux过程中，需要给每个动作添加一个actionTypes类型，比如说在上面，我要获取userToken，就需要再actionTypes中加上USER-TOKEN，而有些时候，调用网络会有成功-失败两种状态，所以可以将这个状态更加细分USER-TOKEN-SUCCESS-USER-TOKEN-ERRO。"><span class="nav-number">6.0.1.</span> <span class="nav-text">actionTypes：在使用redux过程中，需要给每个动作添加一个actionTypes类型，比如说在上面，我要获取userToken，就需要再actionTypes中加上USER_TOKEN，而有些时候，调用网络会有成功/失败两种状态，所以可以将这个状态更加细分USER_TOKEN_SUCCESS/USER_TOKEN_ERRO。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-创建xxxAction文件"><span class="nav-number">7.</span> <span class="nav-text">5. 创建xxxAction文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#xxxAction：可能在一个页面需要用到多个action，比如说我识兔页面中，进入app的时候需要调用获取userToken的action，点击查找按钮的时候需要调用获取图片信息的action。每个页面是可以有多个action的，只需要在页面中引入就好"><span class="nav-number">7.0.1.</span> <span class="nav-text">xxxAction：可能在一个页面需要用到多个action，比如说我识兔页面中，进入app的时候需要调用获取userToken的action，点击查找按钮的时候需要调用获取图片信息的action。每个页面是可以有多个action的，只需要在页面中引入就好</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-connect连接页面和Reducer，完成需求1"><span class="nav-number">8.</span> <span class="nav-text">6. connect连接页面和Reducer，完成需求1</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#connect：如果完成了上面的步骤，恭喜你，还差最后一步就可以看到运行的效果了，那就是在需要的页面connect。因为ShiTu-js中代码过多，所以只在文章中放重要的部分，如果想要查看全部，可以运行项目或者直接查看ShiTu-js"><span class="nav-number">8.0.1.</span> <span class="nav-text">connect：如果完成了上面的步骤，恭喜你，还差最后一步就可以看到运行的效果了，那就是在需要的页面connect。因为ShiTu.js中代码过多，所以只在文章中放重要的部分，如果想要查看全部，可以运行项目或者直接查看ShiTu.js</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完成上面的6步，就可以在现有的项目中使用redux开发了。在第6步中我们只是完成了需求1，接下来就要利用redux实现跨页面更改状态了。"><span class="nav-number">8.1.</span> <span class="nav-text">完成上面的6步，就可以在现有的项目中使用redux开发了。在第6步中我们只是完成了需求1，接下来就要利用redux实现跨页面更改状态了。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-寻找需求"><span class="nav-number">9.</span> <span class="nav-text">1. 寻找需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-实现"><span class="nav-number">10.</span> <span class="nav-text">2. 实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本文只是我对于实现redux的一点看法，可能并不适用于你的项目，如果在使用过程中遇到什么问题，欢迎加QQ群397885169讨论。"><span class="nav-number">0.1.</span> <span class="nav-text">本文只是我对于实现redux的一点看法，可能并不适用于你的项目，如果在使用过程中遇到什么问题，欢迎加QQ群397885169讨论。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果认为我的文章不错，欢迎打赏，关注，喜欢。"><span class="nav-number">0.2.</span> <span class="nav-text">如果认为我的文章不错，欢迎打赏，关注，喜欢。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果感觉我的文章有问题，欢迎在评论区提出，我会修改。"><span class="nav-number">0.3.</span> <span class="nav-text">如果感觉我的文章有问题，欢迎在评论区提出，我会修改。</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -732,7 +738,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">37k</span>
+    <span title="站点总字数">36k</span>
   
 
   
@@ -743,7 +749,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:07</span>
+    <span title="站点阅读时长">1:06</span>
   
 </div>
 
@@ -811,8 +817,6 @@
 
 
 
-  
-
 
 
 
@@ -844,12 +848,7 @@
 
   
   
-    <script type="text/javascript" src="true"></script>
-  
-
-  
-  
-    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+    <script id="ribbon" type="text/javascript" size="300" alpha="0.6"  zIndex="-1" src="https://cdn.jsdelivr.net/gh/cdn-hub/canvas-ribbon@1.0/js/canvas-ribbon.min.js"></script>
   
 
 
