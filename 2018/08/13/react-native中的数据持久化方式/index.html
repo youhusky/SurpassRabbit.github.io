@@ -108,21 +108,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://surpassrabbit.github.io/tags/index.html">
+  <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在react-native开发中，用到最多的除了布局和网络之外，还剩下就是存储了，不管是用户信息的存储，还是应用配置，数据缓存等等，都需要用到。react-native官方提供的AsyncStorage就是用来存储数据的，而在开发中，除了使用AsyncStorage，react-nat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react-native中的数据持久化方式">
+<meta property="og:url" content="https://surpassrabbit.github.io/2018/08/13/react-native中的数据持久化方式/index.html">
 <meta property="og:site_name" content="于广吉的博客">
+<meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在react-native开发中，用到最多的除了布局和网络之外，还剩下就是存储了，不管是用户信息的存储，还是应用配置，数据缓存等等，都需要用到。react-native官方提供的AsyncStorage就是用来存储数据的，而在开发中，除了使用AsyncStorage，react-nat">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-01T08:10:57.144Z">
+<meta property="og:updated_time" content="2018-08-13T02:28:12.785Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="react-native中的数据持久化方式">
+<meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在react-native开发中，用到最多的除了布局和网络之外，还剩下就是存储了，不管是用户信息的存储，还是应用配置，数据缓存等等，都需要用到。react-native官方提供的AsyncStorage就是用来存储数据的，而在开发中，除了使用AsyncStorage，react-nat">
 
 
 
 
 
 
-  <link rel="canonical" href="https://surpassrabbit.github.io/tags/"/>
+  <link rel="canonical" href="https://surpassrabbit.github.io/2018/08/13/react-native中的数据持久化方式/"/>
 
 
 
@@ -132,7 +135,7 @@
   };
 </script>
 
-  <title>tags | 于广吉的博客</title>
+  <title>react-native中的数据持久化方式 | 于广吉的博客</title>
   
 
 
@@ -310,65 +313,240 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://surpassrabbit.github.io/2018/08/13/react-native中的数据持久化方式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="于广吉">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="于广吉的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">tags</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h2 class="post-title" itemprop="name headline">react-native中的数据持久化方式
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-13 10:15:53 / 修改时间：10:28:12" itemprop="dateCreated datePublished" datetime="2018-08-13T10:15:53+08:00">2018-08-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/13/react-native中的数据持久化方式/" class="leancloud_visitors" data-flag-title="react-native中的数据持久化方式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">8 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在<code>react-native</code>开发中，用到最多的除了布局和网络之外，还剩下就是存储了，不管是用户信息的存储，还是应用配置，数据缓存等等，都需要用到。<br><code>react-native</code>官方提供的<code>AsyncStorage</code>就是用来存储数据的，而在开发中，除了使用<code>AsyncStorage</code>，<code>react-native-storage</code>等基于<code>key</code> = <code>value</code>的存取方式外，我们可能还需要存储很大的数据，那么<code>realm</code>，<code>react-native-sqlite</code>等数据库<br>本文主要介绍了<code>AsyncStorage</code>的使用方法，在另一篇文章中，介绍了有关<code>realm</code>数据库的一些技巧。</p>
+<a id="more"></a>
+<h2 id="AsyncStorage"><a href="#AsyncStorage" class="headerlink" title="AsyncStorage"></a>AsyncStorage</h2><p><code>AsyncStorage</code>是react-native官方提供的数据存储方式，采用键值对存储的方式，通过<code>key</code>=&gt;<code>value</code>对应来存取数据，需要注意的是AsyncStorage中只能存储字符串，如果想要存储<code>对象(objec)</code>、<code>数组(array)</code>或者其他类型，需要转换成字符串才可以。</p>
+<h3 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">// 单数据存储</span><br><span class="line">// 键</span><br><span class="line">let key = &apos;myKey&apos;;</span><br><span class="line">// 值（正确的，字符串）</span><br><span class="line">let valueString = &apos;myValue&apos;;</span><br><span class="line">// 数据存储</span><br><span class="line">// key  : string, (字符串型的键)</span><br><span class="line">// value: string, (字符串型的值）</span><br><span class="line">// error: Error,  (错误信息）</span><br><span class="line">AsyncStorage.setItem(key,valueString,(error)=&gt;&#123;</span><br><span class="line">    if (error)&#123;</span><br><span class="line">        console.log(&apos;存储失败&apos; + error);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        console.log(&apos;存储成功&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">// 值（错误的，对象）</span><br><span class="line">let valueObject = &#123;&apos;one&apos;:&apos;1&apos;,&apos;two&apos;:&apos;2&apos;&#125;;</span><br><span class="line">// 值（错误的，数组）</span><br><span class="line">let valueArray = [&apos;one&apos;,&apos;two&apos;];</span><br><span class="line">// 如果需要存储对象类型或者数组类型的值，需要将其转换成字符型，然后再进行键值存储。</span><br><span class="line">// 转换对象</span><br><span class="line">valueObject = JSON.stringify(valueObject);  </span><br><span class="line">// 转换数组</span><br><span class="line">valueArray = JSON.stringify(valueArray);  </span><br><span class="line"></span><br><span class="line">// 多数据存储</span><br><span class="line">// 键</span><br><span class="line">let key = &apos;myKey&apos;;</span><br><span class="line">let multKey = [[&apos;one&apos;,&apos;1&apos;],[&apos;two&apos;,&apos;2&apos;]];</span><br><span class="line">let multValue = [&apos;1&apos;,&apos;2&apos;];</span><br><span class="line">AsyncStorage.multiSet(multKey,(error)=&gt;&#123;</span><br><span class="line">    if (error)&#123;</span><br><span class="line">        console.log(&apos;存储失败&apos; + error);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        console.log(&apos;存储成功&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">// 单数据获取</span><br><span class="line">// 键</span><br><span class="line">let key = &apos;myKey&apos;;</span><br><span class="line">// 数据读取</span><br><span class="line">// key   : string, (字符串型的键)</span><br><span class="line">// Error : Error,  (Error信息，判断这个参数并不能确定是否错误)</span><br><span class="line">// result: string, (正确的返回信息，通过判断它，才能知道返回信息是否正确)</span><br><span class="line">AsyncStorage.getItem(key,(Error,result)=&gt;&#123;</span><br><span class="line">    if (result === null)&#123;</span><br><span class="line">        console.log(&apos;获取失败&apos; + result);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        console.log(&apos;获取成功&apos; + result);</span><br><span class="line">        // 这里返回的才是正确参数。</span><br><span class="line">        // 如果返回的是转换过的对象类型或者数组类型，需要再次转换。</span><br><span class="line">        console.log(JSON.parse(result));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">// 多数据获取</span><br><span class="line">// key需要和存储的key对应。</span><br><span class="line">let multKey = [&apos;one&apos;,&apos;two&apos;];</span><br><span class="line">AsyncStorage.multiGet(multKey,(Error,result)=&gt;&#123;</span><br><span class="line">    if (result===null)&#123;</span><br><span class="line">        console.log(&apos;获取失败&apos; + result);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        console.log(&apos;获取成功&apos; + result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">// 全部获取</span><br><span class="line">AsyncStorage.getAllKeys((error,result)=&gt;&#123;</span><br><span class="line">    if (result===null)&#123;</span><br><span class="line">        console.log(&apos;获取失败&apos; + result);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        console.log(&apos;获取成功&apos; + result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="数据删除"><a href="#数据删除" class="headerlink" title="数据删除"></a>数据删除</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 删除单个数据可以通过removeItem</span><br><span class="line">// 要删除的key</span><br><span class="line">let key = &apos;myKey&apos;;</span><br><span class="line">AsyncStorage.removeItem(key);</span><br><span class="line"></span><br><span class="line">// 删除多个数据可以使用multiRemove</span><br><span class="line">// 要删除的key数组</span><br><span class="line">let keyArr = [&apos;one&apos;,&apos;two&apos;];</span><br><span class="line">AsyncStorage.multiRemove(keyArr);</span><br><span class="line"></span><br><span class="line">// 删除所有数据</span><br><span class="line">AsyncStorage.clear();</span><br></pre></td></tr></table></figure>
+<h2 id="react-native-storage"><a href="#react-native-storage" class="headerlink" title="react-native-storage"></a>react-native-storage</h2><p>这个是react-native中文网封装，可以同时支持react-native(AsyncStorage)和浏览器(localStorage)的数据存于方式，使用ES6语法。<br>官方提供的文档很清晰，可以跳转到github<a href="https://github.com/sunnylqm/react-native-storage/blob/master/README-CHN.md" target="_blank" rel="noopener">(react-native-storage)</a>上查看，如果使用中遇到问题，可以在下方评论或者私信给我</p>
+<h2 id="react-native-sqlite"><a href="#react-native-sqlite" class="headerlink" title="react-native-sqlite"></a>react-native-sqlite</h2><p>如果在之前的开发中使用过其他语言的数据库，就会知道sqlite虽然是一个很强大，很轻量的数据库，但对于其严格的语法，复杂的语句，所以我很推荐最后一个数据库来替代<a href="https://github.com/almost/react-native-sqlite" target="_blank" rel="noopener">react-native-sqlite</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">sqlite.open(&quot;filename.sqlite&quot;, function (error, database) &#123;</span><br><span class="line">    if (error) &#123;</span><br><span class="line">        console.log(&quot;Failed to open database:&quot;, error);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    var sql = &quot;SELECT a, b FROM table WHERE field=? AND otherfield=?&quot;;</span><br><span class="line">    var params = [&quot;somestring&quot;, 99];</span><br><span class="line">    database.executeSQL(sql, params, rowCallback, completeCallback);</span><br><span class="line">    function rowCallback(rowData) &#123;</span><br><span class="line">        console.log(&quot;Got row data:&quot;, rowData);</span><br><span class="line">    &#125;</span><br><span class="line">    function completeCallback(error) &#123;</span><br><span class="line">        if (error) &#123;</span><br><span class="line">        console.log(&quot;Failed to execute query:&quot;, error);</span><br><span class="line">        return</span><br><span class="line">        &#125;</span><br><span class="line">        console.log(&quot;Query complete!&quot;);</span><br><span class="line">        database.close(function (error) &#123;</span><br><span class="line">            if (error) &#123;</span><br><span class="line">                console.log(&quot;Failed to close database:&quot;, error);</span><br><span class="line">            return</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Realm"><a href="#Realm" class="headerlink" title="Realm"></a>Realm</h2><p><a href="https://realm.io/cn/docs/javascript/latest/" target="_blank" rel="noopener">realm</a>是一个跨平台移动数据库引擎，支持iOS、OS X（Objective-C和Swift）、Android以及react-native。<br>在使用过程中，简单,粗暴，而且官方文档清晰，全面。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>2017年第一篇文章，写的有点水，但也是很努力的研究过这几个方法，过段时间会把写好的demo放到github上。<br>2017年，我会努力写更多的，更好的文章来分享给大家，欢迎各位在评论区评论和发私信给我呦！</p>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>于广吉</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://surpassrabbit.github.io/2018/08/13/react-native中的数据持久化方式/" title="react-native中的数据持久化方式">https://surpassrabbit.github.io/2018/08/13/react-native中的数据持久化方式/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/07/redux”使用“教程/" rel="next" title="redux"使用"教程">
+                <i class="fa fa-chevron-left"></i> redux"使用"教程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -403,8 +581,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -494,6 +681,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AsyncStorage"><span class="nav-number">2.</span> <span class="nav-text">AsyncStorage</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据存储"><span class="nav-number">2.1.</span> <span class="nav-text">数据存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据获取"><span class="nav-number">2.2.</span> <span class="nav-text">数据获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据删除"><span class="nav-number">2.3.</span> <span class="nav-text">数据删除</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#react-native-storage"><span class="nav-number">3.</span> <span class="nav-text">react-native-storage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#react-native-sqlite"><span class="nav-number">4.</span> <span class="nav-text">react-native-sqlite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Realm"><span class="nav-number">5.</span> <span class="nav-text">Realm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1027,43 +1230,35 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
           }
         })
-        .fail(function ({ responseJSON }) {
-          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
-        });
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
     }
     
 
@@ -1083,9 +1278,7 @@
             });
           };
           
-          if ($('.post-title-link').length >= 1) {
-            showTime(Counter);
-          }
+          addCount(Counter);
           
         })
     });
